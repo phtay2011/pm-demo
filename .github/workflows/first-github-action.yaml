@@ -1,5 +1,9 @@
 name: first-github-action
-on: [push]
+on:
+  push:
+    branches:
+      # When someone push to `main` branch
+      - production
 jobs:
   write-to-console:
     runs-on: ubuntu-latest
